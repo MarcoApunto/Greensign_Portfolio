@@ -298,8 +298,69 @@ nav.active on.off {
 // About end
 
 // Portfolio start
+.container-portfolio {
+	display: flex;
+	align-items: center;
+	justify-self: center;
+	padding: 20px;
+}
 
+.container-carousel {
+	position: relative;
+	width: 50%;
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+	border-radius: 15px;
+	overflow: hidden;
 
+}
+
+.carousel {
+	width: 300%;
+	height: 100%;
+	position: flex;
+	display: flex;
+
+	.slider-section {
+		width: calc(100% / 3);
+		height: 100%;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 15px;
+		}
+	}
+}
+
+.btn-left,
+.btn-right {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	font-size: 1.5rem;
+	background-color: transparent;
+	border-radius: 50%;
+	font-weight: 600;
+	cursor: pointer;
+	color: #fff;
+	transform: translate(0, -50%);
+	transition: .5s ease;
+	user-select: none;
+
+	&:hover {
+		background-color: #333333d4;
+		color: #fff;
+	}
+}
+
+.btn-left {
+	left: 10px;
+}
+
+.btn-right {
+	right: 10px;
+}
 
 // Portfolio end
 
@@ -343,7 +404,7 @@ nav.active on.off {
 	.row {
 		flex-direction: row;
 		align-items: center;
-			
+
 	}
 
 	.icon-about-us {
