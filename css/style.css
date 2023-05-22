@@ -97,6 +97,16 @@ select {
   color: inherit;
 }
 
+body {
+  font-family: var(--typo-primary);
+  font-size: 100%;
+  min-height: 100vh;
+  background-color: var(--white);
+  font-smooth: always;
+  --webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .hr-text {
   font-size: 20px;
   position: relative;

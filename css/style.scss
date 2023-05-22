@@ -92,6 +92,16 @@ select {
 	color: inherit;
 }
 
+body {
+	font-family: var(--typo-primary);
+	font-size: 100%;
+	min-height: 100vh;
+	background-color: var(--white);
+	font-smooth: always;
+	--webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 // hr beautify
 
 .hr-text {
@@ -298,6 +308,7 @@ nav.active on.off {
 // About end
 
 // Portfolio start
+
 .container-portfolio {
 	display: flex;
 	align-items: center;
@@ -312,7 +323,6 @@ nav.active on.off {
 	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
 	border-radius: 15px;
 	overflow: hidden;
-
 }
 
 .carousel {
