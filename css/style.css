@@ -269,7 +269,8 @@ nav.active on.off {
 
 .container-carousel {
   position: relative;
-  width: 50%;
+  width: 600px;
+  height: 400px;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
   border-radius: 15px;
   overflow: hidden;
