@@ -28,13 +28,13 @@ document.addEventListener('click', function (event) {
 	}
 });
 
-const btnLeft = document.querySelector(".btn-left"),
-	btnRight = document.querySelector(".btn-right"),
-	slider = document.querySelector("#slider"),
-	sliderSection = document.querySelectorAll(".slider-section");
+const btnLeft = document.querySelector('.btn-left'),
+	btnRight = document.querySelector('.btn-right'),
+	slider = document.querySelector('#slider'),
+	sliderSection = document.querySelectorAll('.slider-section');
 
-btnLeft.addEventListener("click", e => moveLeft());
-btnRight.addEventListener("click", e => moveRight());
+btnLeft.addEventListener('click', e => moveLeft());
+btnRight.addEventListener('click', e => moveRight());
 
 setInterval(() => {
 	moveRight();
@@ -49,7 +49,7 @@ function moveRight() {
 		counter = 0;
 		operation = 0;
 		slider.style.transform = `translate(${operation}%)`;
-		slider.style.transition = "none";
+		slider.style.transition = 'none';
 		return;
 	}
 	counter++;
@@ -66,7 +66,7 @@ function moveLeft() {
 		counter = sliderSection.length - 1;
 		operation = widthImg * counter;
 		slider.style.transform = `translate(-${operation}%)`;
-		slider.style.transition = "none";
+		slider.style.transition = 'none';
 		return;
 	}
 	operation -= widthImg;
